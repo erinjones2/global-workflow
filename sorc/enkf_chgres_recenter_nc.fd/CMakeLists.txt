@@ -17,10 +17,10 @@ target_link_libraries(
   ${exe_name}
   nemsio::nemsio
   bacio::bacio_4
-  sp::sp_d
   ip::ip_d
+  sp::sp_d
   w3nco::w3nco_d
-  fv3gfs_ncio
+  ncio::ncio
   NetCDF::NetCDF_Fortran)
 if(OpenMP_Fortran_FOUND)
   target_link_libraries(${exe_name} OpenMP::OpenMP_Fortran)
